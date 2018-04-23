@@ -1,10 +1,9 @@
-#Helpful Resources
-
+#resources
 #https://usa.ipums.org/usa-action/downloads/extract_files/usa_00003.do
 #https://www3.nd.edu/~steve/computing_with_data/24_dplyr/dplyr.html
 #http://rprogramming.net/recode-data-in-r/
 #https://www.google.com/search?q=match+010+in+one+dataframe+with+the+name+in+another+column+r&oq=match+010+in+one+dataframe+with+the+name+in+another+column+r&aqs=chrome..69i57.25152j0j1&sourceid=chrome&ie=UTF-8
-
+#
 
 ##############################################################################
 #First I need to subset the states from the data 
@@ -92,10 +91,65 @@ data$states[data$state==81]<-"Alaska"
 data$states[data$state==82]<-"Hawaii"
 
 #group occupations by state
-state_grouping_01 <- filter(data, states == "Alabama")
 
-state_grouping_01
+state_grouping_01<- filter(data, states == "Connecticut")
+state_grouping_02<- filter(data, states == "Maine")
+state_grouping_03<- filter(data, states == "Massachusett")
+state_grouping_04<- filter(data, states == "NewHampshire")
+state_grouping_05<- filter(data, states == "RhodeIsland")
+state_grouping_06<- filter(data, states == "Vermont")
+state_grouping_07<- filter(data, states == "Delaware")
+state_grouping_08<- filter(data, states == "NewJersey")
+state_grouping_09<- filter(data, states == "NewYork")
+state_grouping_10<- filter(data, states == "Pennsylvania")
+state_grouping_11<- filter(data, states == "Illinois")
+state_grouping_12<- filter(data, states == "Indiana")
+state_grouping_13<- filter(data, states == "Michigan")
+state_grouping_14<- filter(data, states == "Ohio")
+state_grouping_15<- filter(data, states == "Wisconsin")
+state_grouping_16<- filter(data, states == "Iowa")
+state_grouping_17<- filter(data, states == "Kansas")
+state_grouping_18<- filter(data, states == "Minnesota")
+state_grouping_19<- filter(data, states == "Missouri")
+state_grouping_20<- filter(data, states == "Nebraska")
+state_grouping_21<- filter(data, states == "North_Dakota")
+state_grouping_22<- filter(data, states == "South_Dakota")
+state_grouping_23<- filter(data, states == "Virginia")
+state_grouping_24<- filter(data, states == "Alabama")
+state_grouping_25<- filter(data, states == "Arkansas")
+state_grouping_26<- filter(data, states == "Florida")
+state_grouping_27<- filter(data, states == "Georgia")
+state_grouping_28<- filter(data, states == "Louisiana")
+state_grouping_29<- filter(data, states == "Mississippi")
+state_grouping_30<- filter(data, states == "NorthCarolina")
+state_grouping_31<- filter(data, states == "SouthCarolina")
+state_grouping_32<- filter(data, states == "Texas")
+state_grouping_33<- filter(data, states == "Kentucky")
+state_grouping_34<- filter(data, states == "Maryland")
+state_grouping_35<- filter(data, states == "Oklahoma")
+state_grouping_36<- filter(data, states == "Tennessee")
+state_grouping_37<- filter(data, states == "WestVirginia")
+state_grouping_38<- filter(data, states == "Arizona")
+state_grouping_39<- filter(data, states == "Colorado")
+state_grouping_40<- filter(data, states == "Idaho")
+state_grouping_41<- filter(data, states == "Montana")
+state_grouping_42<- filter(data, states == "Nevada")
+state_grouping_43<- filter(data, states == "NewMexico")
+state_grouping_44<- filter(data, states == "Utah")
+state_grouping_45<- filter(data, states == "Wyoming")
+state_grouping_46<- filter(data, states == "California")
+state_grouping_47<- filter(data, states == "Oregon")
+state_grouping_48<- filter(data, states == "Washington")
+state_grouping_49<- filter(data, states == "Alaska")
+state_grouping_50<- filter(data, states == "Hawaii")
 
 
-
-
+##########################################
+#Next step is to categorize jobs as a subtitute
+#or a complement to ai and from there, we'll 
+#simply divide the number of jobs at risk by
+#the total number of jobs to retrieve the percentage
+#at risk for technical unemployment 
+#then we'll map the US by state and their 
+#associated risk factor on a map to visualize
+#the potential impact.
